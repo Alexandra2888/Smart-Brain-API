@@ -1,3 +1,8 @@
+const express = require('express')
+const cors = require('cors')
+const app = express()
+
+app.use(cors())
 // returns the user object for an id sent as a request param
 const handleProfileGet = (req, res, db) => {
     const { id } = req.params

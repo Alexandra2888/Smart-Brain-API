@@ -16,7 +16,7 @@ const handleSignin = (req, res, db, bcrypt) => {
                 .then(match => {
                     if (match) {
                         // password match, return user object from db
-                        return db.select('*').from('users') // why is return needed?
+                        return db.select('*').from('users')
                             .where({email})
                             .then(user => {
                                 res.json(user[0])
