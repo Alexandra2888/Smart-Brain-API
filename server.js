@@ -13,10 +13,10 @@ const db = knex({
 
   client: 'pg',
   connection: {
-    host : '127.0.0.1',
-    user : 'postgres',
+    host : 'ec2-23-20-224-166.compute-1.amazonaws.com',
+    user : 'gjbpyqscsqrckq',
     password : 'Alexandra',
-    database : 'postgres'
+    database : 'dems4kfejecjq7'
   }
 });
 
