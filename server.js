@@ -16,7 +16,8 @@ const db = knex({
     host : 'ec2-23-20-224-166.compute-1.amazonaws.com',
     user : 'gjbpyqscsqrckq',
     password : 'Alexandra',
-    database : 'dems4kfejecjq7'
+    database : 'dems4kfejecjq7',
+    ssl: true
   }
 });
 
